@@ -85,6 +85,9 @@ function buildCharts(sample1) {
       y: yticks,
       type: "bar",
       orientation: "h",
+      marker: {
+        color: "grey"
+      },
       text: labels 
     }];
     // 9. Create the layout for the bar chart. 
@@ -136,7 +139,7 @@ console.log(washFreq1)
 
 // 4. Create the trace for the gauge chart.
 var gaugeData = [{
-  domain: { x: [0,1], y:[0, 1] },
+  //domain: { x: [0,1], y:[0, 1] },
   value: washFreq1,
   type: "indicator",
   mode: "gauge+number",
